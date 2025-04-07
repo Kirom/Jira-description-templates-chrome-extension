@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#4285f4" rx="16" ry="16" />
+  
+  <!-- Text "SG" for String Generator -->
+  <text x="64" y="74" font-family="Arial, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="white">SG</text>
+  
+  <!-- Border -->
+  <rect width="126" height="126" x="1" y="1" stroke="#3367d6" stroke-width="2" fill="none" rx="15" ry="15" />
+</svg> 

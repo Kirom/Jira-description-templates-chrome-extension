@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>String Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px;
+      padding: 15px;
+    }
+    button {
+      margin: 10px 0;
+      padding: 8px 15px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    #releaseInput {
+      padding: 8px;
+      margin-bottom: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .success-message {
+      background-color: #4caf50;
+      color: white;
+      padding: 8px;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>String Generator</h2>
+  <div class="container">
+    <button id="mergeButton">Merged to develop</button>
+    
+    <div>
+      <input type="text" id="releaseInput" placeholder="Enter release version (e.g., 0.0.26)">
+      <button id="releaseButton">Release</button>
+    </div>
+    
+    <div id="successMessage" class="success-message">Copied to clipboard!</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html> 
