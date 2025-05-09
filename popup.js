@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+  const blankButton = document.getElementById('blankButton');
   const mergeButton = document.getElementById('mergeButton');
   const releaseButton = document.getElementById('releaseButton');
   const releaseInput = document.getElementById('releaseInput');
@@ -28,6 +29,20 @@ document.addEventListener('DOMContentLoaded', function() {
       successMessage.style.display = 'none';
     }, 2000);
   }
+
+  // Handle "Blank message" button click
+  blankButton.addEventListener('click', function() {
+    const date = formatDate();
+    const text = `Viktor ${date}: `;
+    
+    navigator.clipboard.writeText(text)
+      .then(() => {
+        showSuccessMessage();
+      })
+      .catch(err => {
+        console.error('Could not copy text: ', err);
+      });
+  });
 
   // Handle "Merged to develop" button click
   mergeButton.addEventListener('click', function() {

@@ -28,6 +28,12 @@
 
 ## Using the Extension
 
+### Generate "Blank message"
+1. Click on the extension icon in your toolbar to open the popup.
+2. Click the "Blank message" button.
+3. The text `Viktor DD.MM.YYYY: ` (with today's date) will be copied to your clipboard.
+4. A green confirmation message will appear briefly.
+
 ### Generate "Merged to develop" Message
 1. Click on the extension icon in your toolbar to open the popup.
 2. Click the "Merged to develop" button.
